@@ -34,7 +34,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
     final response = await http.get(
       Uri.parse(
-          'http://wordshk.ap-southeast-1.elasticbeanstalk.com/search?query=${_searchController.text}'),
+          'https://wordshk.ap-southeast-1.elasticbeanstalk.com/search?query=${_searchController.text}'),
     );
 
     if (response.statusCode == 200) {
